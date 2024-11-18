@@ -54,6 +54,7 @@
                     <table class="table">
                         <thead>
                             <tr>
+                                <th>ID</th>
                                 <th>FILE NAME</th>
                                 <th>SIZE</th>
                                 <th>UPLOADED</th>
@@ -64,6 +65,7 @@
                             <% if (files && files.length > 0) { %>
                                 <% files.forEach(file => { %>
                                     <tr>
+                                        <td><%= file._id %></td>
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <i class="bi bi-file-earmark me-2"></i>
